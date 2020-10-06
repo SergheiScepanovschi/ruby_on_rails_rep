@@ -1,4 +1,4 @@
 require_relative 'example_bank'
 
-
-ExampleBank.execute
+example_bank = ExampleBank.new
+example_bank.execute

@@ -19,25 +19,20 @@ class Account
   end
 
   def to_h
+  {
+    account:
     {
-        name:         name,
-        currency:     currency,
-        balance:      balance,
-        nature:       nature,
-        transactions: transactions.map(&:to_h)
+      name:         name,
+      currency:     currency,
+      balance:      balance,
+      nature:       nature,
+      transactions: transactions.map(&:to_h)
     }
+  }
   end
 
   # method to add transaction
   def add_transaction(v_date, v_description, v_amount, v_currency, v_account_name)
     transactions << Transaction.new(v_date, v_description, v_amount, v_currency, v_account_name)
-  end
-end
-
-# scroll down to bottom to find "No more activity" string
-def scroll_to_bottom(browser)
-  loop do
-    browser.scroll.to :bottom
-    break if browser.text.include?('No more activity') || browser.text.include?('No matching activity found.')
   end
 end

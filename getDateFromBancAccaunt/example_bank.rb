@@ -13,42 +13,54 @@ require 'pry'
 require 'webdrivers'
 require_relative 'account'
 
+# scroll down to bottom to find "No more activity" string
+def scroll_to_bottom(browser)
+  loop do
+    browser.scroll.to :bottom
+    break if browser.text.include?('No more activity') || browser.text.include?('No matching activity found.')
+  end
+end
+
 # main class to fetch and parse our site
 class ExampleBank
-  #attr_accessor :browser, :accounts
-  @@browser = Watir::Browser.new :firefox
-  @@accounts = []
-  def self.accounts
-    @@accounts
-  end
-  def self.connect
-    # here you log in to the bank
-    @@browser.goto 'https://demo.bendigobank.com.au/banking/sign_in'
-    @@browser.button(name: 'customer_type').click
+  attr_accessor :browser , :accounts
+  def initialize()
+    @browser     = Watir::Browser.new :firefox
+    @accounts    = []
   end
 
-  def self.fetch_accounts
+  def accounts
+    @accounts
+  end
+
+  def connect
+    # here you log in to the bank
+    @browser.goto 'https://demo.bendigobank.com.au/banking/sign_in'
+    @browser.button(name: 'customer_type').click
+  end
+
+  def fetch_accounts
     # fetch html data using nokogiri, take only fragment of html.
-    strct = @@browser.script(id: 'data')
+    strct = @browser.script(id: 'data')
     parse_accounts(strct)
   end
 
-  def self.fetch_transactions
-    #accounts_box = @@browser.elements(css: 'li[data-semantic="account-group"]')[0]
+  def fetch_transactions
+    #accounts_box = @browser.elements(css: 'li[data-semantic="account-group"]')[0]
     account_css_selector = 'li[data-semantic="account-item"]'
     sleep 6
-    @@browser.elements(css: account_css_selector).each_with_index do |build, index|
+    @browser.elements(css: account_css_selector).each_with_index do |build, index|
       # binding.pry
       build.wait_until_present.click
       # set date for 2 month
       set_data_filter
-      scroll_to_bottom(@@browser)
+      scroll_to_bottom(@browser)
       # go to transactions
       parse_transactions(index)
     end
   end
 
-  def self.parse_accounts(html)
+  def parse_accounts(html)
     strct = html.innertext
     # parse accounts here
     pos1 = strct.rindex(/__DATA__/)
@@ -59,7 +71,7 @@ class ExampleBank
     strct = strct.slice(pos1, pos2)
     my_hash = JSON.parse(strct)
     my_hash['accounts'].each do |item|
-      @@accounts << Account.new(
+      @accounts << Account.new(
         item['name'],
         item['currentBalance']['currency'],
         item['currentBalance']['value'].to_f,
@@ -68,23 +80,23 @@ class ExampleBank
     end
   end
 
-  def self.set_data_filter
+  def set_data_filter
     two_month = 60
     current_date = Time.now.strftime('%d/%m/%Y') # DD/MM/YYYY
     edge_date = Date.parse(current_date) - two_month
-    @@browser.element(css: 'a[data-semantic="filter"]').wait_until_present.click
-    @@browser.element(css: 'a[data-semantic="date-filter"]').wait_until_present.click
-    b = @@browser.element(css: 'li[aria-label="Custom Date Range"]')
+    @browser.element(css: 'a[data-semantic="filter"]').wait_until_present.click
+    @browser.element(css: 'a[data-semantic="date-filter"]').wait_until_present.click
+    b = @browser.element(css: 'li[aria-label="Custom Date Range"]')
     b.wait_until_present.click
     b.wait_until_present.scroll.to
-    @@browser.text_field(id: /fromDate/).set edge_date.strftime('%d/%m/%Y')
-    @@browser.text_field(id: /toDate/).set current_date
+    @browser.text_field(id: /fromDate/).set edge_date.strftime('%d/%m/%Y')
+    @browser.text_field(id: /toDate/).set current_date
 
-    @@browser.element(css: 'button[data-semantic="apply-filter-button"]').wait_until_present.click
-    @@browser.element(css: 'button[data-semantic="apply-filters-button"]').wait_until_present.click
+    @browser.element(css: 'button[data-semantic="apply-filter-button"]').wait_until_present.click
+    @browser.element(css: 'button[data-semantic="apply-filters-button"]').wait_until_present.click
   end
 
-  def self.parse_transactions(index)
+  def parse_transactions(index)
     # parse transactions here
 
     transaction_css_selector = 'li[data-semantic="activity-item"]'
@@ -95,16 +107,16 @@ class ExampleBank
 
     label_list = ['Paid on', 'Payment Date', 'Description']
 
-    currency_transaction = @@accounts[index].currency.to_f
-    account_name = @@accounts[index].name
+    currency_transaction = @accounts[index].currency
+    account_name = @accounts[index].name
     puts account_name
-    @@browser.elements(css: transaction_css_selector).each do |transaction|
+    @browser.elements(css: transaction_css_selector).each do |transaction|
       transaction.wait_until_present.scroll.to # we have to wait till object will be available
       sleep 2
       transaction.click
       sleep 2
-      header_transaction = Nokogiri::HTML(@@browser.html).css(header_css_selector)
-      properties_transaction = Nokogiri::HTML(@@browser.html).css(properties_css_selector)
+      header_transaction = Nokogiri::HTML(@browser.html).css(header_css_selector)
+      properties_transaction = Nokogiri::HTML(@browser.html).css(properties_css_selector)
       amount_transaction = header_transaction.children.last.text.delete('$')
       container_attributes = []
       properties_transaction.each do |list_item|
@@ -127,9 +139,9 @@ class ExampleBank
       end
       date_transaction = date[:date]
       description_transaction = date[:any]
-      @@browser.back
+      @browser.back
       sleep 3
-      @@accounts[index].add_transaction(
+      @accounts[index].add_transaction(
         date_transaction, description_transaction,
         amount_transaction, currency_transaction,
         account_name
@@ -138,17 +150,18 @@ class ExampleBank
   end
 
   # in JSON file
-  def self.save_result
-    temp_hash = @@accounts.map(&:to_h).to_json
+  def save_result
+    temp_hash = @accounts.map(&:to_h).to_json
     File.open('temp.json', 'w') do |f|
       f.write(JSON.pretty_generate(temp_hash))
     end
   end
 
-  def self.execute
+  def execute
     connect
     fetch_accounts
     fetch_transactions
     save_result
   end
 end
+

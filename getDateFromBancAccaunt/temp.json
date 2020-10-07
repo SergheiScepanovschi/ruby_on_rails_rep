@@ -1,1 +1,123 @@
-"[{\"account\":{\"name\":\"Demo Everyday Account\",\"currency\":\"AUD\",\"balance\":223290.0,\"nature\":\"bank-brand\",\"transactions\":[{\"date\":\"2020-10-06\",\"description\":\"CASHCARD\\\\NEWSXPRESS BEERS PORT\",\"amount\":\"50.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-10-04\",\"description\":null,\"amount\":\"37.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-10-02\",\"description\":\"OPORTO ST LEONARDS,ST LEONARDS\",\"amount\":\"49.92\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-10-02\",\"description\":\"Credit card\",\"amount\":\"220.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-10-02\",\"description\":\"Credit card\",\"amount\":\"160.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-30\",\"description\":\"Pocket money Tim\",\"amount\":\"12.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-29\",\"description\":\"BBL - Yungaburra       Yungabu\",\"amount\":\"100.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-28\",\"description\":\"OPTUS PREPAID MELBOU,MELBOURNE\",\"amount\":\"83.52\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-28\",\"description\":\"TIGER AIRWAYS AUST,BOWEN HILLS\",\"amount\":\"41.48\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-28\",\"description\":\"FORUM-C PTY LTD     0440944998\",\"amount\":\"4,550.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-27\",\"description\":\"OPORTO ST LEONARDS,ST LEONARDS\",\"amount\":\"46.38\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-27\",\"description\":\"CBA\\\\NORTH WARD\",\"amount\":\"150.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-25\",\"description\":\"ALDI STORES - FO,FORTITUDE VAL\",\"amount\":\"57.34\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-25\",\"description\":null,\"amount\":\"32.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-24\",\"description\":\"CASHCARD\\\\BELROWES MINIMART\\\\BEL\",\"amount\":\"50.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-23\",\"description\":\"JB HI FI WARRINGAH, BROOKVALE\",\"amount\":\"91.65\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-23\",\"description\":\"Pocket money Tim\",\"amount\":\"13.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-20\",\"description\":\"CEXP JIMBOOMBA         Jimboom\",\"amount\":\"200.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-16\",\"description\":null,\"amount\":\"29.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-16\",\"description\":\"Pocket money Tim\",\"amount\":\"14.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-14\",\"description\":\"Pay \",\"amount\":\"96.68\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-14\",\"description\":\"JCU HRMIS PRODUC    0438485347\",\"amount\":\"4,550.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-13\",\"description\":\"OPORTO SOUTH MEL,SOUTH MELBOUR\",\"amount\":\"69.58\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-13\",\"description\":\"Northlakes San Remo    San Rem\",\"amount\":\"100.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-13\",\"description\":\"Pay \",\"amount\":\"2,439.21\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-12\",\"description\":\"BAKERS DELIGHT ST1,ST LEONARDS\",\"amount\":\"85.49\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-12\",\"description\":\"Pay \",\"amount\":\"306.58\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-11\",\"description\":\"Pay for cable\",\"amount\":\"69.95\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-09\",\"description\":\"Pocket money Tim\",\"amount\":\"15.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-08\",\"description\":\"KMART 1045, KANGAROO FLAT\",\"amount\":\"15.95\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-07\",\"description\":null,\"amount\":\"24.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-04\",\"description\":\"BBL- Cairns Sheridan St Cairns\",\"amount\":\"100.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-04\",\"description\":\"Newcastle Airport 2    William\",\"amount\":\"200.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-03\",\"description\":\"BBL- Bendigo Cntrl Lobb Bendig\",\"amount\":\"150.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-02\",\"description\":\"Credit card\",\"amount\":\"240.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-02\",\"description\":\"Credit card\",\"amount\":\"190.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-02\",\"description\":\"Pocket money Tim\",\"amount\":\"16.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-01\",\"description\":\"OPTUS PREPAID MELBOU,MELBOURNE\",\"amount\":\"12.65\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-01\",\"description\":\"BBL- Eaglehawk #2      Eagleha\",\"amount\":\"100.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-09-01\",\"description\":\"BBL- Eaglehawk #2      Eagleha\",\"amount\":\"50.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-31\",\"description\":\"JCU HRMIS PRODUC    0438485347\",\"amount\":\"4,550.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-30\",\"description\":\"Pay \",\"amount\":\"83.74\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-29\",\"description\":\"Foreign TT\",\"amount\":\"20.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-29\",\"description\":\"Foreign TT\",\"amount\":\"18.66\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-29\",\"description\":null,\"amount\":\"18.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-27\",\"description\":\"Tower Shopping CeBOQ     Toowo\",\"amount\":\"100.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-26\",\"description\":\"ALDI STORES - WERRIBE,WERRIBEE\",\"amount\":\"96.74\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-26\",\"description\":\"WOOLWORTHS 3311, STH MELBOURNE\",\"amount\":\"72.69\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-26\",\"description\":\"Pocket money Tim\",\"amount\":\"17.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-25\",\"description\":\"IKEA RICHMOND, RICHMOND\",\"amount\":\"98.64\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-24\",\"description\":\"QANTAS AIRWAYS LIMITED, MASCOT\",\"amount\":\"5.49\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-22\",\"description\":\"IKEA RICHMOND, RICHMOND\",\"amount\":\"85.09\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-20\",\"description\":null,\"amount\":\"10.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-19\",\"description\":\"Domestic TT\",\"amount\":\"86.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-19\",\"description\":\"Pocket money Tim\",\"amount\":\"18.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-18\",\"description\":\"OPORTO SOUTH MEL,SOUTH MELBOUR\",\"amount\":\"56.80\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-17\",\"description\":\"JCU HRMIS PRODUC    0440675735\",\"amount\":\"4,550.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-16\",\"description\":\"ALDI STORES - FO,FORTITUDE VAL\",\"amount\":\"42.69\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-16\",\"description\":\"Northlakes San Remo    San Rem\",\"amount\":\"50.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-14\",\"description\":\"BBL- Cairns Sheridan St Cairns\",\"amount\":\"100.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-13\",\"description\":\"TULLY PTY LTD, BENTLEIGH\",\"amount\":\"96.32\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-13\",\"description\":\"WOOLWORTHS 3311, STH MELBOURNE\",\"amount\":\"97.02\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-12\",\"description\":\"Pocket money Tim\",\"amount\":\"19.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-11\",\"description\":\"Pay for cable\",\"amount\":\"70.95\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-11\",\"description\":null,\"amount\":\"34.00\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-10\",\"description\":\"MCDONALDS THE STRAND, SYDNEY\",\"amount\":\"14.56\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"},{\"date\":\"2020-08-07\",\"description\":\"Pay \",\"amount\":\"97.35\",\"currency\":\"AUD\",\"account_name\":\"Demo Everyday Account\"}]}},{\"account\":{\"name\":\"Demo My Mastercard\",\"currency\":\"AUD\",\"balance\":-53496.0,\"nature\":\"credit-card\",\"transactions\":[{\"date\":\"2020-10-04\",\"description\":\"WOOLWORTHS 3311, STH MELBOURNE\",\"amount\":\"91.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-10-05\",\"description\":\"WOOLWORTHS 1248, SYDNEY\",\"amount\":\"59.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-10-04\",\"description\":null,\"amount\":\"37.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-10-02\",\"description\":\"Credit card\",\"amount\":\"220.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-10-02\",\"description\":\"Credit card\",\"amount\":\"160.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-27\",\"description\":\"OPORTO ST LEONARDS,ST LEONARDS\",\"amount\":\"124.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-28\",\"description\":\"TIGER AIRWAYS AUST,BOWEN HILLS\",\"amount\":\"148.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-25\",\"description\":null,\"amount\":\"32.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-20\",\"description\":\"CALTEX HAMILTON, HAMILTON\",\"amount\":\"110.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-21\",\"description\":\"IKEA SPRINGVALE, SPRINGVALE\",\"amount\":\"113.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-16\",\"description\":null,\"amount\":\"29.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-14\",\"description\":\"ALDI STORES - WERRIBE,WERRIBEE\",\"amount\":\"82.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-13\",\"description\":\"OPTUS PREPAID MELBOU,MELBOURNE\",\"amount\":\"89.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-07\",\"description\":\"BUNNINGS 461000 QPS, FYSHWICK\",\"amount\":\"98.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-07\",\"description\":null,\"amount\":\"24.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-07\",\"description\":\"OPTUS PREPAID MELBOU,MELBOURNE\",\"amount\":\"88.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-02\",\"description\":\"Credit card\",\"amount\":\"240.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-09-02\",\"description\":\"Credit card\",\"amount\":\"190.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-30\",\"description\":\"JB HI FI WARRINGAH, BROOKVALE\",\"amount\":\"134.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-31\",\"description\":\"7-ELEVEN 1326, ST KILDA\",\"amount\":\"147.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-29\",\"description\":null,\"amount\":\"18.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-24\",\"description\":\"Domestic TT\",\"amount\":\"28.84\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-23\",\"description\":\"QANTAS AIRWAYS LIMIT, MASCOT\",\"amount\":\"144.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-24\",\"description\":\"QANTAS AIRWAYS LIMIT, MASCOT\",\"amount\":\"136.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-20\",\"description\":null,\"amount\":\"10.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-16\",\"description\":\"OPTUS BILLING SE,MACQUARIE PAR\",\"amount\":\"79.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-17\",\"description\":\"JBHiFi.com.au, CHADSTONE\",\"amount\":\"138.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-15\",\"description\":\"Foreign TT\",\"amount\":\"20.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-15\",\"description\":\"Foreign TT\",\"amount\":\"50.26\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-11\",\"description\":null,\"amount\":\"34.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-09\",\"description\":\"MCDONALDS THE STRAND, SYDNEY\",\"amount\":\"50.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"},{\"date\":\"2020-08-10\",\"description\":\"MCDONALDS THE STRAND, SYDNEY\",\"amount\":\"66.00\",\"currency\":\"AUD\",\"account_name\":\"Demo My Mastercard\"}]}},{\"account\":{\"name\":\"Demo Home Loan\",\"currency\":\"AUD\",\"balance\":-26432180.0,\"nature\":\"home-loan\",\"transactions\":[{\"date\":\"2020-10-05\",\"description\":\"Home loan payment\",\"amount\":\"1,104.69\",\"currency\":\"AUD\",\"account_name\":\"Demo Home Loan\"},{\"date\":\"2020-09-30\",\"description\":\"Interest charged\",\"amount\":\"964.77\",\"currency\":\"AUD\",\"account_name\":\"Demo Home Loan\"},{\"date\":\"2020-09-05\",\"description\":\"Home loan payment\",\"amount\":\"1,104.69\",\"currency\":\"AUD\",\"account_name\":\"Demo Home Loan\"},{\"date\":\"2020-08-31\",\"description\":\"Interest charged\",\"amount\":\"964.77\",\"currency\":\"AUD\",\"account_name\":\"Demo Home Loan\"}]}},{\"account\":{\"name\":\"Demo Term Deposit\",\"currency\":\"AUD\",\"balance\":9999900.0,\"nature\":\"term-deposit\",\"transactions\":[]}},{\"account\":{\"name\":\"SmartStart Super\",\"currency\":\"AUD\",\"balance\":4500000.0,\"nature\":\"superannuation\",\"transactions\":[]}}]"
+{
+  "accounts": [
+    {
+      "name": "Demo Everyday Account",
+      "currency": "AUD",
+      "balance": 223290.0,
+      "nature": "bank-brand",
+      "transactions": [
+        {
+          "date": "2020-10-07",
+          "description": "CASHCARD\\NEWSXPRESS BEERS PORT",
+          "amount": "50.00",
+          "currency": "AUD",
+          "account_name": "Demo Everyday Account"
+        },
+        {
+          "date": "2020-10-05",
+          "description": null,
+          "amount": "37.00",
+          "currency": "AUD",
+          "account_name": "Demo Everyday Account"
+        },
+        {
+          "date": "2020-10-03",
+          "description": "OPORTO ST LEONARDS,ST LEONARDS",
+          "amount": "49.92",
+          "currency": "AUD",
+          "account_name": "Demo Everyday Account"
+        },
+        {
+          "date": "2020-10-03",
+          "description": "Credit card",
+          "amount": "220.00",
+          "currency": "AUD",
+          "account_name": "Demo Everyday Account"
+        },
+        {
+          "date": "2020-10-03",
+          "description": "Credit card",
+          "amount": "160.00",
+          "currency": "AUD",
+          "account_name": "Demo Everyday Account"
+        }
+      ]
+    },
+    {
+      "name": "Demo My Mastercard",
+      "currency": "AUD",
+      "balance": -53496.0,
+      "nature": "credit-card",
+      "transactions": [
+        {
+          "date": "2020-10-05",
+          "description": "WOOLWORTHS 3311, STH MELBOURNE",
+          "amount": "91.00",
+          "currency": "AUD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "2020-10-06",
+          "description": "WOOLWORTHS 1248, SYDNEY",
+          "amount": "59.00",
+          "currency": "AUD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "2020-10-05",
+          "description": null,
+          "amount": "37.00",
+          "currency": "AUD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "2020-10-03",
+          "description": "Credit card",
+          "amount": "220.00",
+          "currency": "AUD",
+          "account_name": "Demo My Mastercard"
+        },
+        {
+          "date": "2020-10-03",
+          "description": "Credit card",
+          "amount": "160.00",
+          "currency": "AUD",
+          "account_name": "Demo My Mastercard"
+        }
+      ]
+    },
+    {
+      "name": "Demo Home Loan",
+      "currency": "AUD",
+      "balance": -26432180.0,
+      "nature": "home-loan",
+      "transactions": [
+        {
+          "date": "2020-10-06",
+          "description": "Home loan payment",
+          "amount": "1,104.69",
+          "currency": "AUD",
+          "account_name": "Demo Home Loan"
+        }
+      ]
+    },
+    {
+      "name": "Demo Term Deposit",
+      "currency": "AUD",
+      "balance": 9999900.0,
+      "nature": "term-deposit",
+      "transactions": [
+
+      ]
+    },
+    {
+      "name": "SmartStart Super",
+      "currency": "AUD",
+      "balance": 4500000.0,
+      "nature": "superannuation",
+      "transactions": [
+
+      ]
+    }
+  ]
+}

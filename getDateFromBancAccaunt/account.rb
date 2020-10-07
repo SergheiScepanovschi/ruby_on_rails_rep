@@ -20,14 +20,11 @@ class Account
 
   def to_h
   {
-    account:
-    {
-      name:         name,
-      currency:     currency,
-      balance:      balance,
-      nature:       nature,
-      transactions: transactions.map(&:to_h)
-    }
+    name:         name,
+    currency:     currency,
+    balance:      balance,
+    nature:       nature,
+    transactions: transactions.map(&:to_h)
   }
   end
 

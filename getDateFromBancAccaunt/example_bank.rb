@@ -2,8 +2,7 @@
 
 # Information
 # autor: Serghei Scepanovschi
-# examplebank.rb ver 1.1
-#
+# examplebank.rb ver 2.0
 
 require 'date'
 require 'json'
@@ -12,7 +11,6 @@ require 'watir'
 require 'pry'
 require 'webdrivers'
 require_relative 'account'
-# scroll down to bottom to find "No more activity" string
 
 # main class to fetch and parse our site
 class ExampleBank
@@ -20,6 +18,7 @@ class ExampleBank
   def initialize()
     @browser     = Watir::Browser.new :firefox
     @accounts    = []
+    @accounts_hash
   end
 
   def accounts
@@ -32,6 +31,8 @@ class ExampleBank
     @browser.button(name: 'customer_type').click
   end
 
+
+  # scroll down to bottom to find "No more activity" or 'No matching activity found.'  string
   def scroll_to_bottom
     loop do
       @browser.scroll.to :bottom
@@ -48,7 +49,6 @@ class ExampleBank
   def fetch_transactions
     #accounts_box = @browser.elements(css: 'li[data-semantic="account-group"]')[0]
     account_css_selector = 'li[data-semantic="account-item"]'
-    transaction_css_selector = 'li[data-semantic="activity-item"]'
     sleep 6
     @browser.elements(css: account_css_selector).each_with_index do |build, index|
       # binding.pry
@@ -56,16 +56,7 @@ class ExampleBank
       # set date for 2 month
       set_data_filter
       scroll_to_bottom
-      # go to transactions
-      @browser.elements(css: transaction_css_selector).each do |transaction|
-        transaction.wait_until_present.scroll.to # we have to wait till object will be available
-        sleep 2
-        transaction.click
-        sleep 2
-        parse_transactions(index, @browser.html)
-        @browser.back
-        sleep 3
-      end
+      parse_transactions(index, @browser.html)
     end
   end
 
@@ -90,7 +81,7 @@ class ExampleBank
   end
 
   def set_data_filter
-    two_month = 5
+    two_month = 60
     current_date = Time.now.strftime('%d/%m/%Y') # DD/MM/YYYY
     edge_date = Date.parse(current_date) - two_month
     @browser.element(css: 'a[data-semantic="filter"]').wait_until_present.click
@@ -107,57 +98,51 @@ class ExampleBank
 
   # parse transactions here
   def parse_transactions(index, transaction_html)
-    header_css_selector = 'span[data-semantic="payment-amount"]'
-    properties_css_selector = 'nav[class="uilist"] > div[class="uilist__item"]'
-    label__css_selector = 'span[class="uilist__item__label"]'
-    detail_css_selector = 'span[class="uilist__item__label"] + span[class="uilist__item__detail"]'
-    label_list = ['Paid on', 'Payment Date', 'Description']
     currency_transaction = @accounts[index].currency
     account_name = @accounts[index].name
 
-    header_transaction = Nokogiri::HTML(transaction_html).css(header_css_selector)
-    properties_transaction = Nokogiri::HTML(transaction_html).css(properties_css_selector)
-    amount_transaction = header_transaction.children.last.text.delete('$')
-    container_attributes = []
-    properties_transaction.each do |list_item|
-      label_item = list_item.css(label__css_selector).text
-      detail_item = list_item.css(detail_css_selector)
-      detail_item = detail_item ? detail_item.text : 'None'
-      array_atr = [label_item, detail_item]
-      container_attributes << array_atr
-    end
+    date_box_selector= 'li[data-semantic="activity-group"]'
+    date_selector = 'h3[data-semantic="activity-group-heading"]'
 
-    date = {}
-    container_attributes.each do |item_atr|
-      if item_atr.first.eql?(label_list.first) || item_atr.first.eql?(label_list[1])
-        date[:date] = Date.parse(item_atr[1])
-      elsif item_atr[0].eql?(label_list[2])
-        date[:any] = item_atr[1]
+    transaction_selector = 'li[data-semantic="activity-item"]'
+    description_selector = 'span[data-semantic="transaction-secondary-title"]'
+    amount_selector = 'span[data-semantic="amount"]'
+
+
+    @browser.elements(css: date_box_selector).each do |date_transactions_box|
+      date_transaction  =  Nokogiri::HTML(date_transactions_box.html).css(date_selector).text
+      date_transactions_box.wait_until_present.scroll.to # we have to wait till object will be available
+      date_transactions_box.elements(css: transaction_selector).each do |transaction|
+        transaction.wait_until_present.scroll.to # we have to wait till object will be available
+        amount_transaction = Nokogiri::HTML(transaction.html).css(amount_selector).text.delete('$')
+        description_transaction =  Nokogiri::HTML(transaction.html).css(description_selector).text
+        # add data to account
+        @accounts[index].add_transaction(
+          date_transaction, description_transaction,
+          amount_transaction, currency_transaction,
+          account_name
+        )
       end
     end
-    date_transaction = date[:date]
-    description_transaction = date[:any]
-    @accounts[index].add_transaction(
-      date_transaction, description_transaction,
-      amount_transaction, currency_transaction,
-      account_name
-    )
   end
 
   # in JSON file
   def save_result
-    #temp_hash = @accounts.map(&:to_h).to_json
-    my_object = { :accounts => @accounts.map(&:to_h) }
+    @accounts_hash = { :accounts => @accounts.map(&:to_h) }
     File.open('temp.json', 'w') do |f|
-      f.write(JSON.pretty_generate(my_object))
+      f.write(JSON.pretty_generate(@accounts_hash))
     end
   end
 
+  def print
+    puts JSON.pretty_generate(@accounts_hash)
+  end
   def execute
     connect
     fetch_accounts
     fetch_transactions
     save_result
+    print
   end
 end
 

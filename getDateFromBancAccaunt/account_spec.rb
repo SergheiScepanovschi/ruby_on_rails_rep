@@ -40,7 +40,7 @@ describe 'accounts' do
   it 'should match data account' do
     hash_temp = example_bank.accounts[0].to_h
     hash_temp.delete(:transactions)
-    expect(hash_temp.to_json).to eq(accounts[0].to_json)
+    expect(hash_temp).to eq(accounts[0])
   end
 
   it 'should match data transaction' do
@@ -51,7 +51,7 @@ describe 'accounts' do
     end
 
     example_bank.parse_transactions(0, html_example)
-    expect(example_bank.accounts[0].transactions.to_h.to_json).to eq(accounts[0].transactions.to_json)
+    expect(example_bank.accounts[0].transactions.to_h).to eq(accounts[0].transactions)
   end
   it 'should receive 10 for transactions' do
     expect(example_bank.accounts[0].transactions.count).to eq(10)
